@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product = {
+            company :'maango',
+            price: 873,
+            item_name :  'kurti',
+
+        };
+        console.log(product);
+        console.log(product.company);
+/// for delete the object...
+        delete product ['company'];
+        console.log(product);
+
+        console.log('this is supriya'.toUpperCase());
+
+/// object References...
+        let a = 5;
+        let b= a;
+        console.log(`${a},${b}`);
+let x = {num:5};
+let y = x;
+console.log(`x = ${x.num},y = ${y.num}`);
+
+///Practise set ...
+
+let Product = {
+    size : 's',
+    name : 'jeans',
+    fit : 'slim-fit',
+    delivery-time: 'same daye before',
+};
+ let copyProduct = Product;
+ console.log(product);
+ copyProduct.size = 'M';
+ console.log(product);
+
+ let obj = {
+    message : 'good job',
+    status: 'complete',
+ };
+ // restructured kr rhe h...
+ console.log(obj);
+ let {message , status } = obj;
+ console.log(message);
+ console.log(status);
+
+ function isIdenticalProduct(product1 , product2){
+
+    if(typeof product1 !== 'object' || typeof product2 !== 'object'){
+        console.warn('parameter passes was not an object');
+        return false;
+    }
+
+    if(product1 == product2){
+        return true;
+    }
+
+
+
+    else{
+        return false;
+    }
+ }
+
+
+
+    </script>
+    
+</body>
+</html>

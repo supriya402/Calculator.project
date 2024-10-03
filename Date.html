@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+    <h3 id = 'greeting'></h3>
+
+    <button id = 'my-button' onclick = "buttonPressed();">0</button>
+
+    <script>
+        let noOfTimesClicked = 0;
+        function buttonPressed(){
+            // button ko find kr rhe h...
+            let button = document.querySelector('#my-button');
+            noOfTimesClicked++;
+            button.innerText = noOfTimesClicked;
+            
+        }
+
+
+
+
+        let myDate = new Date();
+        console.log(myDate);
+        console.log(myDate.getTime());
+        console.log(myDate.getFullYear());
+        console.log(myDate.getDay());
+        console.log(myDate.getHours());
+        console.log(myDate.getMinutes());
+        console.log(myDate.getMilliseconds());
+
+        let button = document.createElement('Button');
+        button.innerText = 'click Me';
+        document.querySelector('.my-div').appendChild(button);
+        document.querySelector('.my-div').removeChild(button);
+/// practise....
+
+        let date = new Date();
+        let Hours = 19;
+        console.log(myDate.getHours());
+        let heading = document.querySelector('#greeting');
+        if(Hours>5 &&Hours < 12){
+            heading.innerText = 'Good Morning'
+        }else if(Hours > 12 && Hours<18){
+            heading.innerText = 'Good Afternoon'
+        }else{
+            heading.innerText = 'Good evening' 
+        }
+        
+       
+        
+        
+
+
+
+    </script>
+    
+</body>
+</html>

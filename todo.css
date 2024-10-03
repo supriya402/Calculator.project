@@ -1,0 +1,63 @@
+
+#main-heading{
+    width:50%;
+    margin-left:70px;
+}
+*{
+    background-color:antiquewhite;
+}
+
+
+
+body{
+    font-family: Arial;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns:200px 150px 100px;
+    column-gap: 10px;
+    row-gap:10px;
+    margin-top:10px;
+    
+    width: 50%;
+    
+
+}
+#todo-input , #todo-date{
+    font-size:15px;
+    padding:10px 5px;
+}
+.btn-delete{
+    background-color:brown;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:15px 0px;
+    curser:pointer;
+}
+.btn-todo{
+    background-color:green;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:15px 0px;
+    curser:pointer;
+
+}
+#center{
+  box-sizing: border-box;
+  width: 50%;
+  border: 5px solid black;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left:40px;
+  padding-right: 40px;
+  
+  width:50%;
+
+}
+#top{
+    padding-top: 150px;
+    padding-left: 300px;
+}

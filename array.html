@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let x = [1,4,3,6,7,9,4];
+    console.log(x[1]);
+    x.push(10);  // used to add the element in arrray..
+    console.log(typeof(x));
+    console.log(x);
+    x.pop();  // used to remove last element from the array..
+    console.log(x);
+
+    let arr = [3,5,7,5];
+    arr.sort();
+
+    console.log(arr.toString()); // used to convert into string..
+
+    console.log(arr);
+    arr.splice(1,2);  //used to remove the element according to their index...
+    console.log(arr);
+
+    // References in array..
+    let arr2 = arr;
+    arr2[0] = 12;
+    console.log(arr);
+       </script> 
+</body>
+</html>

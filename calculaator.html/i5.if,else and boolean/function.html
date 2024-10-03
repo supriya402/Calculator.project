@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let age = 18;
+      function printAge(){
+        console.log(`your age is ${age}`);
+      }
+      age = 20; 
+      printAge();
+      age = 1;
+      printAge(); 
+
+       // function sum(a,b){ // a,b is called parameter..
+       // let sum = a+b;
+       // return sum;
+       
+     // let num = sum(9,6);  // 9,6 is called argument
+      //console.log(num); 
+      
+      //defaullt value...
+
+      //function greeting(name = 'pyare'){
+      //  console.log(`namaste ${name} uncle`);
+      //}
+
+      //greeting();  // agr greeting ke ander koi value na ho to by default pyare print ho jyega agr greeting ke ander koi value h to wo wla define hga...
+      
+// number is odd or even...
+      function isOdd(n){
+        let rem = n%2;
+        let isOdd = rem ==1;
+        return isOdd;
+     }
+     console.log(isOdd (4));
+     console.log( isOdd(5));
+
+/// larger of two number....
+
+     function largerNumber(a,b){
+      // if(a>b){
+      // } return a;
+    //}else{
+     // return b;
+
+    // also can be return in this form using ternary operator...
+     return a>b ? a:b;
+    }
+    console.log(largerNumber(3,3));
+    console.log(largerNumber(1,9));
+
+
+/// degree to celcius conversion...
+    function toFahrenhite(celsiusValue){
+
+      return 9/5*celsiusValue + 32;
+    }
+    console.log(toFahrenhite(32));
+    console.log(toFahrenhite(38));
+    console.log(toFahrenhite(100));
+
+
+      </script>
+</body>
+</html>
