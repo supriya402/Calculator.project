@@ -11,7 +11,7 @@ console.log(5 / 2); // division
 // 2 way - Math.floor(5/2)
 
 // Assignment operator
-let x =5; //assign 10 to the variable x
+let x = 5; //assign 10 to the variable x
 x += 2; //x = x+2
 x -= 2; // x = x-2
 x *= 2; // x = x*2
